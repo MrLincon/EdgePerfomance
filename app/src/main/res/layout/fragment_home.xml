@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutID"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorBackground"
+        app:tabIndicator="@drawable/tab_indicator"
+        app:tabIndicatorColor="@color/colorTabIndicator"
+        app:tabIndicatorGravity="center"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="36dp"
+        app:tabPaddingStart="36dp"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/colorTabIndicatorTextSelected"
+        app:tabTextAppearance="@style/TabTextAppearance"
+        app:tabTextColor="@color/colorTabIndicatorTextUnselected"></com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@color/colorBackground"></androidx.viewpager.widget.ViewPager>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

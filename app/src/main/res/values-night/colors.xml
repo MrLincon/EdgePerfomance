@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4527A0</color>
+    <color name="colorPrimaryDark">#4527A0</color>
+    <color name="colorAccent">#2196F3</color>
+
+    <color name="colorBackground">#000</color>
+    <color name="colorText">#ffffff</color>
+    <color name="colorTextChip">#fff</color>
+    <color name="colorTextSecondary">#99FFFFFF</color>
+    <color name="colorSecondary">#B3FFFFFF</color>
+    <color name="colorIcon">#fff</color>
+    <color name="colorView">#1AFFFFFF</color>
+    <color name="colorTitle">#fff</color>
+
+    <color name="colorCard">#282828</color>
+    <color name="colorBottomNav">#323232</color>
+    <color name="colorActiveBottom">#fff</color>
+    <color name="colorInactiveBottom">#fff</color>
+    <color name="colorBackgroundLayout">#323232</color>
+
+    <color name="colorTabIndicator">#CC4527A0</color>
+    <color name="colorTabIndicatorTextSelected">#fff</color>
+    <color name="colorTabIndicatorTextUnselected">#63FFFFFF</color>
+
+
+    <color name="colorWhite">#fff</color>
+    <color name="colorOffWhite">#efefef</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorOrange">#ff5722</color>
+    <color name="colorRed">#f44336</color>
+    <color name="colorPink">#e91e63</color>
+    <color name="colorPurple">#673ab7</color>
+    <color name="colorGreen">#4caf50</color>
+    <color name="colorYellow">#ffeb3b</color>
+    <color name="colorBlue">#2196f3</color>
+    <color name="colorTeal">#00bcd4</color>
+
+    <color name="colorItemCards">#DFDEDE</color>
+    <color name="color1">#FA834B</color>
+    <color name="color2">#8C97F9</color>
+    <color name="color3">#358AA9</color>
+    <color name="color4">#FCBD72</color>
+    <color name="color5">#14243E</color>
+    <color name="color6">#277CFB</color>
+
+    <color name="svg1">#FBD384</color>
+    <color name="svg2">#F9E887</color>
+    <color name="svg3">#8696FA</color>
+    <color name="svg4">#EF836C</color>
+    <color name="svg5">#F47FFC</color>
+    <color name="svg6">#76FAD8</color>
+
+</resources>
