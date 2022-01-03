@@ -1,4 +1,4 @@
-package com.maxgreenbd.edgeperfomance.Activities;
+package io.edgeperformance.edge.Activities;
 
 import android.app.Dialog;
 import android.content.ActivityNotFoundException;
@@ -11,21 +11,34 @@ import android.view.View;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.cardview.widget.CardView;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.maxgreenbd.edgeperfomance.R;
-import com.maxgreenbd.edgeperfomance.Models.ThemeSettings;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+import io.edgeperformance.edge.Authentication.SignInActivity;
+import io.edgeperformance.edge.Models.ThemeSettings;
+import io.edgeperformance.edge.R;
 
 public class SettingsActivity extends AppCompatActivity {
 
     private FloatingActionButton fab;
-    private CardView dark_mode, rate, share, feedback;
+    private CardView dark_mode, rate, share, feedback, logout;
     private Switch dark_mode_switch;
 
     Dialog popup;
+
+    GoogleSignInClient mGoogleSignInClient;
+    private FirebaseAuth mAuth;
 
     ThemeSettings themeSettings;
 
@@ -50,14 +63,25 @@ public class SettingsActivity extends AppCompatActivity {
         rate = findViewById(R.id.rate);
         share = findViewById(R.id.share);
         feedback = findViewById(R.id.feedback);
+        logout = findViewById(R.id.logout);
 
         popup = new Dialog(this);
+
 
         if (themeSettings.loadNightModeState() == false) {
             dark_mode_switch.setChecked(false);
         } else {
             dark_mode_switch.setChecked(true);
         }
+
+        mAuth = FirebaseAuth.getInstance();
+
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build();
+
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,6 +144,34 @@ public class SettingsActivity extends AppCompatActivity {
                     Toast.makeText(SettingsActivity.this, "There is no e-mail clint installed!", Toast.LENGTH_SHORT).show();
 
                 }
+            }
+        });
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseUser currentUser = mAuth.getCurrentUser();
+                if (currentUser!=null){
+                    revokeAccess();
+                }else{
+                    Intent signIn = new Intent(SettingsActivity.this, SignInActivity.class);
+                    startActivity(signIn);
+                    finish();
+                }
+            }
+        });
+    }
+
+    private void revokeAccess() {
+        FirebaseAuth.getInstance().signOut();
+
+        mGoogleSignInClient.revokeAccess().addOnCompleteListener(this, new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                Intent intent = new Intent(SettingsActivity.this, SignInActivity.class);
+                startActivity(intent);
+                Toast.makeText(getApplicationContext(), "Logging out...", Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
     }

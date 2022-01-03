@@ -1,10 +1,11 @@
-package com.maxgreenbd.edgeperfomance.Authentication;
+package io.edgeperformance.edge.Authentication;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.maxgreenbd.edgeperfomance.R;
+import io.edgeperformance.edge.R;
+
 
 public class InformationActivity extends AppCompatActivity {
 

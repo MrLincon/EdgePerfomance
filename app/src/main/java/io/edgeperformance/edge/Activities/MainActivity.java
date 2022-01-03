@@ -1,4 +1,4 @@
-package com.maxgreenbd.edgeperfomance.Activities;
+package io.edgeperformance.edge.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -11,11 +11,11 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
-import com.maxgreenbd.edgeperfomance.BottomNavFragments.FragmentHome;
-import com.maxgreenbd.edgeperfomance.BottomNavFragments.FragmentProfile;
-import com.maxgreenbd.edgeperfomance.BottomNavFragments.FragmentTools;
-import com.maxgreenbd.edgeperfomance.R;
-import com.maxgreenbd.edgeperfomance.Models.ThemeSettings;
+import io.edgeperformance.edge.BottomNavFragments.FragmentHome;
+import io.edgeperformance.edge.BottomNavFragments.FragmentProfile;
+import io.edgeperformance.edge.BottomNavFragments.FragmentTools;
+import io.edgeperformance.edge.Models.ThemeSettings;
+import io.edgeperformance.edge.R;
 
 public class MainActivity extends AppCompatActivity {
 

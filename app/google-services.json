@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "481740335738",
+    "firebase_url": "https://edge-performance-ios-default-rtdb.firebaseio.com",
+    "project_id": "edge-performance-ios",
+    "storage_bucket": "edge-performance-ios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481740335738:android:29655ce3a2ee46a2a769c3",
+        "android_client_info": {
+          "package_name": "io.edgeperformance.edge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "481740335738-ojaerppi9led4j1l9qjimck0dg7qhdop.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.edgeperformance.edge",
+            "certificate_hash": "87ca67bdd63c7de46fbef9168f37f2c1d9dae963"
+          }
+        },
+        {
+          "client_id": "481740335738-k1njp28f5b9de3p9jvpo7k1f9qo70kuk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUyxV_0ct2xH8S8-LgWxlB7Qa6mZPO5-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "481740335738-k1njp28f5b9de3p9jvpo7k1f9qo70kuk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "481740335738-aqu88frcb0n73utpcj5ic6oa7nd3354a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.edgeperformance.Edge-Performance"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

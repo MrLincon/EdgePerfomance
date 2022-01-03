@@ -14,10 +14,12 @@
     <color name="colorTitle">#fff</color>
 
     <color name="colorCard">#282828</color>
+    <color name="colorCardHome">#282828</color>
     <color name="colorBottomNav">#323232</color>
     <color name="colorActiveBottom">#fff</color>
     <color name="colorInactiveBottom">#fff</color>
     <color name="colorBackgroundLayout">#323232</color>
+    <color name="colorArrow">#fff</color>
 
     <color name="colorTabIndicator">#CC4527A0</color>
     <color name="colorTabIndicatorTextSelected">#fff</color>

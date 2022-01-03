@@ -1,4 +1,4 @@
-package com.maxgreenbd.edgeperfomance.BottomNavFragments;
+package io.edgeperformance.edge.BottomNavFragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,8 +11,8 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
-import com.maxgreenbd.edgeperfomance.R;
-import com.maxgreenbd.edgeperfomance.Models.ViewPagerAdapter;
+import io.edgeperformance.edge.Models.ViewPagerAdapter;
+import io.edgeperformance.edge.R;
 
 
 public class FragmentHome extends Fragment {

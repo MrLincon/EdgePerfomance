@@ -1,4 +1,4 @@
-package com.maxgreenbd.edgeperfomance.Models;
+package io.edgeperformance.edge.Models;
 
 import android.content.Context;
 import android.content.SharedPreferences;

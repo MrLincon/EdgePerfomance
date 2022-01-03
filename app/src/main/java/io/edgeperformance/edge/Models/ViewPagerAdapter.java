@@ -1,4 +1,4 @@
-package com.maxgreenbd.edgeperfomance.Models;
+package io.edgeperformance.edge.Models;
 
 
 import androidx.annotation.Nullable;
@@ -6,9 +6,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import com.maxgreenbd.edgeperfomance.HomeFragments.FragmentEveningRoutine;
-import com.maxgreenbd.edgeperfomance.HomeFragments.FragmentMorningRoutine;
-import com.maxgreenbd.edgeperfomance.HomeFragments.FragmentWeeklyRoutine;
+import io.edgeperformance.edge.HomeFragments.FragmentEveningRoutine;
+import io.edgeperformance.edge.HomeFragments.FragmentMorningRoutine;
+import io.edgeperformance.edge.HomeFragments.FragmentWeeklyRoutine;
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 

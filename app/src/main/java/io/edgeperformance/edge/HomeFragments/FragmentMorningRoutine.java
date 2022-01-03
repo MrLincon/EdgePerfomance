@@ -1,4 +1,4 @@
-package com.maxgreenbd.edgeperfomance.HomeFragments;
+package io.edgeperformance.edge.HomeFragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,8 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.maxgreenbd.edgeperfomance.R;
-
+import io.edgeperformance.edge.R;
 
 public class FragmentMorningRoutine extends Fragment {
 
