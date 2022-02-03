@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.edgeperformance.edge">
+    <!-- Permissions for internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -9,7 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EdgePerformance">
-        <activity android:name="io.edgeperformance.edge.Authentication.SignInActivity"
+        <activity
+            android:name=".Activities.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ToolsDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.SignInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,16 +27,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="io.edgeperformance.edge.Authentication.SignUpActivity"></activity>
-        <activity android:name="io.edgeperformance.edge.Authentication.PasswordRecoveryActivity"></activity>
-        <activity android:name="io.edgeperformance.edge.Authentication.InformationActivity"></activity>
-        <activity android:name="io.edgeperformance.edge.Activities.SettingsActivity"
-            android:parentActivityName="io.edgeperformance.edge.Activities.MainActivity"></activity>
+        <activity android:name=".Authentication.SignUpActivity" />
+        <activity android:name=".Authentication.PasswordRecoveryActivity" />
+        <activity android:name=".Authentication.InformationActivity" />
         <activity
-            android:name="io.edgeperformance.edge.Activities.MainActivity"
-            android:exported="true">
+            android:name=".Activities.SettingsActivity"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="true" />
 
-        </activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

@@ -8,6 +8,7 @@
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable-v24/tab_indicator.xml" value="0.21614583333333334" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/border.xml" value="0.10989583333333333" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/bottomsheet_background.xml" value="0.21614583333333334" />
+        <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/circle.xml" value="0.18703703703703703" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/cursor_color.xml" value="0.21614583333333334" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/ic_arrow_left.xml" value="0.21614583333333334" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/ic_back.xml" value="0.21614583333333334" />
@@ -18,6 +19,7 @@
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/ic_home.xml" value="0.21614583333333334" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/ic_logout.xml" value="0.21614583333333334" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/ic_notification.xml" value="0.21614583333333334" />
+        <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/ic_pause.xml" value="0.18703703703703703" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/ic_profile.xml" value="0.21614583333333334" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/ic_rate.xml" value="0.21614583333333334" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/ic_settings.xml" value="0.21614583333333334" />
@@ -26,16 +28,20 @@
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/round_edge.xml" value="0.21614583333333334" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/tab_indicator.xml" value="0.21614583333333334" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/activity_notification.xml" value="0.2" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/activity_password_recovery.xml" value="0.2" />
-        <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/activity_settings.xml" value="0.18" />
+        <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/activity_settings.xml" value="0.22" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/activity_signin.xml" value="0.2" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/activity_signup.xml" value="0.2" />
+        <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/activity_tools_details.xml" value="0.22" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/fragment_evening_routine.xml" value="0.2" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/fragment_morning_routine.xml" value="0.2" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/fragment_tools.xml" value="0.2" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/fragment_weekly_routine.xml" value="0.2" />
+        <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/notification_layout.xml" value="0.2" />
+        <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/popup_add_name.xml" value="0.2" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/menu/bottom_nav.xml" value="0.2" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.10989583333333333" />
       </map>
