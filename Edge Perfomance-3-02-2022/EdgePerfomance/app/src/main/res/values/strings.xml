@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Edge Perfomance</string>
+    <string name="breath_count">Breath Count</string>
+    <string name="todo">TODO</string>
+    <string name="_5_november_2015">5 November 2015</string>
+    <string name="choosedate">Choose Date</string>
+    <string name="datechoosen">Date Chosen :</string>
+    <!-- Setting dialog -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_text_inhale">Inhale</string>
+    <string name="settings_text_exhale">Exhale</string>
+    <string name="settings_text_hold">Hold</string>
+    <string name="settings_text_close">Close</string>
+    <string name="zero">00:00</string>
+    <string name="jan">January</string>
+    <string name="jul">July</string>
+    <string name="jun">June</string>
+    <string name="mar">March</string>
+    <string name="feb">February</string>
+    <string name="aug">August</string>
+    <string name="apr">April</string>
+    <string name="may">May</string>
+    <string name="dec">December</string>
+    <string name="sep">September</string>
+    <string name="oct">October</string>
+    <string name="nov">November</string>
+    <string name="_200">200</string>
+    <string name="glasses">Glasses</string>
+    <string name="valid_date">Please select valid date</string>
+    <string name="no_of_breath">Number of breaths you have taken</string>
+    <string name="breath_count_desc">Calculate the number of breaths you have taken so far (i.e.,since your birth).</string>
+</resources>

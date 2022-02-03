@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4527A0</color>
+    <color name="colorPrimaryDark">#4527A0</color>
+    <color name="colorAccent">#2196F3</color>
+
+    <color name="colorBackground">#000</color>
+    <color name="colorText">#ffffff</color>
+    <color name="colorTextChip">#fff</color>
+    <color name="colorTextSecondary">#99FFFFFF</color>
+    <color name="colorSecondary">#B3FFFFFF</color>
+    <color name="colorIcon">#fff</color>
+    <color name="colorView">#1AFFFFFF</color>
+    <color name="colorTitle">#fff</color>
+
+    <color name="colorCard">#282828</color>
+    <color name="colorCardHome">#282828</color>
+    <color name="colorBottomNav">#323232</color>
+    <color name="colorActiveBottom">#fff</color>
+    <color name="colorInactiveBottom">#fff</color>
+    <color name="colorBackgroundLayout">#323232</color>
+    <color name="colorArrow">#fff</color>
+
+    <color name="colorTabIndicator">#CC4527A0</color>
+    <color name="colorTabIndicatorTextSelected">#fff</color>
+    <color name="colorTabIndicatorTextUnselected">#63FFFFFF</color>
+
+
+    <color name="colorWhite">#fff</color>
+    <color name="colorOffWhite">#efefef</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorOrange">#ff5722</color>
+    <color name="colorRed">#f44336</color>
+    <color name="colorPink">#e91e63</color>
+    <color name="colorPurple">#673ab7</color>
+    <color name="colorGreen">#4caf50</color>
+    <color name="colorYellow">#ffeb3b</color>
+    <color name="colorBlue">#2196f3</color>
+    <color name="colorTeal">#00bcd4</color>
+
+    <color name="colorItemCards">#DFDEDE</color>
+    <color name="color1">#FA834B</color>
+    <color name="color2">#8C97F9</color>
+    <color name="color3">#358AA9</color>
+    <color name="color4">#FCBD72</color>
+    <color name="color5">#14243E</color>
+    <color name="color6">#277CFB</color>
+
+    <color name="svg1">#FBD384</color>
+    <color name="svg2">#F9E887</color>
+    <color name="svg3">#8696FA</color>
+    <color name="svg4">#EF836C</color>
+    <color name="svg5">#F47FFC</color>
+    <color name="svg6">#76FAD8</color>
+    <color name="primary">#5068E2</color>
+    <!--    <color name="primary">#2a3546</color>-->
+    <color name="DimGray">#696969</color>
+    <color name="white">#ffffff</color>
+    <color name="primarydark">#475CC7</color>
+    <!--    <color name="primarydark">#1f2734</color>-->
+    <color name="OrangeRed">#ff4500</color>
+    <color name="DarkOrange">#ff8c00</color>
+    <color name="Crimson">#dc143c</color>
+    <color name="greenish">#ff1abc9c</color>
+    <color name="bg_color">#e5e5e5</color>
+    <!--    <color name="bg_color">#DEDEDE</color>-->
+    <color name="txt_black">#333333</color>
+    <color name="bgColor">#F2F6F9</color>
+
+
+    <color name="bluecolorPrimary">#5C8FED</color>
+    <color name="bluecolorPrimaryDark">#5068E2</color>
+    <color name="bluecolorAccent">#333333</color>
+
+    <color name="yellowcolorPrimary">#F3BC3D</color>
+    <color name="yellowcolorPrimaryDark">#FF9800</color>
+    <color name="yellowcolorAccent">#333333</color>
+
+    <color name="cyancolorPrimary">#29AFD3</color>
+    <color name="cyancolorPrimaryDark">#2291AF</color>
+    <color name="cyancolorAccent">#333333</color>
+
+    <color name="pinkcolorPrimary">#B248C7</color>
+    <color name="pinkcolorPrimaryDark">#933BA5</color>
+    <color name="pinkcolorAccent">#333333</color>
+
+    <color name="orangecolorPrimary">#F96F26</color>
+    <color name="orangecolorPrimaryDark">#EE6215</color>
+    <color name="orangecolorAccent">#333333</color>
+
+    <color name="graycolorPrimary">#3D739F</color>
+    <color name="graycolorPrimaryDark">#32648F</color>
+    <color name="graycolorAccent">#333333</color>
+    <color name="colorPrimaryLight">#484848</color>
+</resources>

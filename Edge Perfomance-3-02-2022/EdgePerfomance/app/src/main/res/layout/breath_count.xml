@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/mAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.EdgePerformance">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/Theme.EdgePerformance">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/todo"
+                    android:scaleX="-1"
+                    android:src="@drawable/arrow_cyan" />
+
+
+                <TextView
+                    android:id="@+id/text_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/popind_regular"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/colorText"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/breath_count"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@color/colorBackground"
+        android:orientation="vertical"
+        android:padding="@dimen/scroll_padding">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="@color/colorCard"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="@dimen/card_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/font_size_15"
+                android:orientation="vertical">
+                <!--            -->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/card_padding"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_padding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tvWeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Choose Birth Date"
+                            android:textColor="@color/colorText"
+                            android:textDirection="locale"
+                            android:textSize="@dimen/font_size_18" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tvdatechosen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:gravity="center"
+                            android:text="@string/datechoosen"
+                            android:textColor="@color/colorText"
+                            android:textDirection="locale"
+                            android:textSize="@dimen/font_size_15" />
+
+                        <TextView
+                            android:id="@+id/tvdatechosenval"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:gravity="center"
+                            android:text="@string/_5_november_2015"
+                            android:textColor="?attr/colorPrimary"
+                            android:textDirection="locale"
+                            android:textSize="@dimen/font_size_15" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/edittextstyle_blue"
+                    android:drawableStart="@drawable/ic_calendar"
+                    android:padding="5dp"
+                    android:text="@string/choosedate"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/font_size_15" />
+
+                <Button
+                    android:id="@+id/calc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edittextstyle_blue"
+                    android:padding="5dp"
+                    android:text="calculate"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/font_size_15" />
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/chart"-->
+<!--                    style="@style/AppTheme.fontstylesRegular"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_marginLeft="0dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_marginRight="0dp"-->
+<!--                    android:background="@drawable/edittextstyle_blue"-->
+<!--                    android:text="@string/preg_chart"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="@dimen/font_size_15" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/pdf"-->
+<!--                    style="@style/AppTheme.fontstylesRegular"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_marginLeft="0dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_marginRight="0dp"-->
+<!--                    android:layout_marginBottom="15dp"-->
+<!--                    android:background="@drawable/edittextstyle_blue"-->
+<!--                    android:text="@string/pdf_food"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="@dimen/font_size_15" />-->
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

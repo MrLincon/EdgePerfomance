@@ -1,0 +1,70 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.EdgePerformance" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+    <style name="CyanTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/cyancolorPrimary</item>
+        <item name="colorPrimaryDark">@color/cyancolorPrimaryDark</item>
+        <item name="colorAccent">@color/cyancolorAccent</item>
+        <item name="android:fontFamily">@font/popind_regular</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottomsheet_background</item>
+    </style>
+
+    <style name="bottomNavTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/ubuntu</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="Theme.SettingsDialog" parent="@android:style/Theme.Material.Dialog.Presentation" >
+        <item name="android:seekBarStyle">@style/Theme.SeekBar</item>
+        <item name="android:buttonStyle">@style/Theme.Button</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="Theme.SeekBar" parent="@style/Widget.AppCompat.SeekBar.Discrete">
+        <item name="android:progressTint">@color/colorPrimaryDark</item>
+        <item name="tickMark">@drawable/tick_mark</item>
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+        <item name="android:progressBackgroundTint">@color/colorPrimaryLight</item>
+    </style>
+
+    <style name="Theme.Button" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="android:colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>
