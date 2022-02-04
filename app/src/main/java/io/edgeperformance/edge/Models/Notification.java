@@ -6,9 +6,7 @@ import java.util.Date;
 
 public class Notification {
 
-    private String title, details;
-    private @ServerTimestamp
-    Date timestamp;
+    private String title, details, date, link;
 
     public Notification() {
     }
@@ -29,11 +27,19 @@ public class Notification {
         this.details = details;
     }
 
-    public Date getTimestamp() {
-        return timestamp;
+    public String getDate() {
+        return date;
     }
 
-    public void setTimestamp(Date timestamp) {
-        this.timestamp = timestamp;
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
     }
 }

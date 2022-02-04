@@ -77,7 +77,8 @@ public class MainActivity extends AppCompatActivity {
         notification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Notification clicked!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, NotificationActivity.class);
+                startActivity(intent);
             }
         });
 

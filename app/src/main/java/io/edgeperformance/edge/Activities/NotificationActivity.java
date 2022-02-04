@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -43,6 +44,8 @@ public class NotificationActivity extends AppCompatActivity {
         swipeRefreshLayout = findViewById(R.id.swipeRefreshLayout);
         fab = findViewById(R.id.floating_action_button);
 
+        db = FirebaseFirestore.getInstance();
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,7 +57,7 @@ public class NotificationActivity extends AppCompatActivity {
 
         notification = db.collection("Notification");
 
-        Query query = notification.orderBy("timestamp", Query.Direction.ASCENDING);
+        Query query = notification.orderBy("date", Query.Direction.DESCENDING);
 
         PagedList.Config config = new PagedList.Config.Builder()
                 .setInitialLoadSizeHint(10)
@@ -83,19 +86,19 @@ public class NotificationActivity extends AppCompatActivity {
             public void onItemClick(DocumentSnapshot documentSnapshot) {
                 String id = documentSnapshot.getId();
                 Notification notification = documentSnapshot.toObject(Notification.class);
+                String link = notification.getLink();
 
-//                Intent intent = new Intent(FoodActivity.this, RestaurantActivity.class);
-//
-//                String name = restaurant.getName();
-//
-//                intent.putExtra(EXTRA_ID, id);
-//                intent.putExtra(EXTRA_NAME, name);
-//
-//                startActivity(intent);
-//                finish();
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(link));
+                startActivity(browserIntent);
 
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
     }
 
     @Override

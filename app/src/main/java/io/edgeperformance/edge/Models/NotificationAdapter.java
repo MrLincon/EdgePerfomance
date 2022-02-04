@@ -37,7 +37,9 @@ public class NotificationAdapter extends FirestorePagingAdapter<Notification, No
 
     @Override
     protected void onBindViewHolder(@NonNull final NotificationHolder holder, int position, @NonNull Notification model) {
-
+        holder.Title.setText(model.getTitle());
+        holder.Details.setText(model.getDetails());
+        holder.Date.setText(model.getDate());
     }
 
     @Override
@@ -59,7 +61,7 @@ public class NotificationAdapter extends FirestorePagingAdapter<Notification, No
                 break;
             case LOADED:
                 mSwipeRefreshLayout.setRefreshing(false);
-                Log.d("Paging Log", "Total data loaded "+getItemCount());
+                Log.d("Paging Log", "Total data loaded " + getItemCount());
                 break;
             case ERROR:
                 mSwipeRefreshLayout.setRefreshing(false);

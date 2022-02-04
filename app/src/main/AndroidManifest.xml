@@ -14,7 +14,8 @@
         android:theme="@style/Theme.EdgePerformance">
         <activity
             android:name=".Activities.NotificationActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Activities.MainActivity"/>
         <activity
             android:name=".Activities.ToolsDetailsActivity"
             android:exported="false" />
