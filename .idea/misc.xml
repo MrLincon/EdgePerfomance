@@ -28,6 +28,7 @@
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/ic_tools.xml" value="0.21614583333333334" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/round_edge.xml" value="0.21614583333333334" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/drawable/tab_indicator.xml" value="0.21614583333333334" />
+        <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/activity_goals.xml" value="0.1859375" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/activity_notification.xml" value="0.2" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/activity_password_recovery.xml" value="0.2" />
@@ -35,6 +36,7 @@
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/activity_signin.xml" value="0.2" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/activity_signup.xml" value="0.2" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/activity_tools_details.xml" value="0.22" />
+        <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/activity_values.xml" value="0.2" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/fragment_evening_routine.xml" value="0.2" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/#Work/Android/EdgePerfomance/app/src/main/res/layout/fragment_morning_routine.xml" value="0.2" />

@@ -13,9 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EdgePerformance">
         <activity
+            android:name=".Activities.GoalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ValuesActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.NotificationActivity"
             android:exported="false"
-            android:parentActivityName=".Activities.MainActivity"/>
+            android:parentActivityName=".Activities.MainActivity" />
         <activity
             android:name=".Activities.ToolsDetailsActivity"
             android:exported="false" />
