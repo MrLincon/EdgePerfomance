@@ -27,210 +27,258 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="60dp"
-        android:orientation="vertical">
+        android:scrollbars="none">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:text="Select Your Values (Max 5)"
-            android:textColor="@color/colorText"
-            android:textSize="18sp"
-            android:textStyle="bold"></TextView>
-
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scrollbars="none">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <com.google.android.material.chip.ChipGroup
-                    android:id="@+id/categories"
-                    android:layout_width="420dp"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="24dp"
-                    android:paddingRight="24dp"
-                    app:chipSpacingHorizontal="8dp"
-                    app:chipSpacingVertical="8dp"
-                    app:singleLine="false"
-                    app:singleSelection="false">
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/abundance"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Abundance" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/achievement"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Achievement" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/adventure"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Adventure" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/ambition"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Ambition" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/assertiveness"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Assertiveness" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/autonomy"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Autonomy" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/authentic"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Authentic" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/awe"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Awe" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/adjustment"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Adjustment" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/balance"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Balance" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/challenge"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Challenge" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/citizenship"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Citizenship" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/compassion"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Compassion" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/competency"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Competency" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/community"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Community" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/collaboration"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Collaboration" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/commitment"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Commitment" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/connectivity"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Connectivity" />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/consistency"
-                        style="@style/ChipStyleChoice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Consistency" />
-
-                </com.google.android.material.chip.ChipGroup>
-
-            </FrameLayout>
-
-        </HorizontalScrollView>
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/save"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="36dp"
-            android:layout_marginBottom="16dp"
-            android:clickable="true"
-            android:foreground="?attr/selectableItemBackground"
-            app:cardBackgroundColor="@color/colorPrimary"
-            app:cardCornerRadius="60dp">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Select Your Values (Max 5)"
+                android:textColor="@color/colorText"
+                android:textSize="18sp"
+                android:textStyle="bold"></TextView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/categories"
+                        android:layout_width="420dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        app:chipSpacingHorizontal="8dp"
+                        app:chipSpacingVertical="8dp"
+                        app:singleLine="false"
+                        app:singleSelection="false">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/abundance"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Abundance" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/achievement"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Achievement" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/adventure"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Adventure" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ambition"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Ambition" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/assertiveness"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Assertiveness" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/autonomy"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Autonomy" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/authenticity"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Authenticity" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/awe"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Awe" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/adjustment"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Adjustment" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/balance"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Balance" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/challenge"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Challenge" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/citizenship"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Citizenship" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/compassion"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Compassion" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/competency"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Competency" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/community"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Community" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/collaboration"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Collaboration" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/commitment"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Commitment" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/connection"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Connection" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/choice"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Choice" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/competition"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Competition" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/composure"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Composure" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/contribution"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Contribution" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/courage"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Courage" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/creativity"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Creativity" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/consistency"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Consistency" />
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                </FrameLayout>
+
+            </HorizontalScrollView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/save"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Save"
-                android:textColor="@color/colorWhite"
-                android:textSize="20sp"></TextView>
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="60dp">
 
-        </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Save"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"></TextView>
+
+            </androidx.cardview.widget.CardView>
 
 
-    </LinearLayout>
+        </LinearLayout>
 
+    </ScrollView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floating_action_button"

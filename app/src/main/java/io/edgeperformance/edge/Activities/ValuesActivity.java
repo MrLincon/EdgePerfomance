@@ -40,9 +40,9 @@ public class ValuesActivity extends AppCompatActivity {
     ChipGroup categories;
     String Category;
 
-    Chip abundance, achievement, adventure, ambition, assertiveness, autonomy, authentic,
+    Chip abundance, achievement, adventure, ambition, assertiveness, autonomy, authenticity,
             awe, adjustment, balance, challenge, citizenship, compassion, competency, community,
-            collaboration, commitment, connectivity, consistency;
+            collaboration, commitment, connection, consistency, choice, competition, composure, contribution, courage, creativity ;
 
     private String userID;
     FirebaseAuth mAuth;
@@ -64,7 +64,7 @@ public class ValuesActivity extends AppCompatActivity {
         ambition = findViewById(R.id.ambition);
         assertiveness = findViewById(R.id.assertiveness);
         autonomy = findViewById(R.id.autonomy);
-        authentic = findViewById(R.id.authentic);
+        authenticity = findViewById(R.id.authenticity);
         awe = findViewById(R.id.awe);
         adjustment = findViewById(R.id.adjustment);
         balance = findViewById(R.id.balance);
@@ -75,8 +75,14 @@ public class ValuesActivity extends AppCompatActivity {
         community = findViewById(R.id.community);
         collaboration = findViewById(R.id.collaboration);
         commitment = findViewById(R.id.commitment);
-        connectivity = findViewById(R.id.connectivity);
+        connection = findViewById(R.id.connection);
         consistency = findViewById(R.id.consistency);
+        choice = findViewById(R.id.choice);
+        competition = findViewById(R.id.competition);
+        composure = findViewById(R.id.composure);
+        contribution = findViewById(R.id.contribution);
+        courage = findViewById(R.id.courage);
+        creativity = findViewById(R.id.creativity);
 
 
         mAuth = FirebaseAuth.getInstance();
@@ -116,7 +122,7 @@ public class ValuesActivity extends AppCompatActivity {
         ambition.setOnCheckedChangeListener(checkedChangeListener);
         assertiveness.setOnCheckedChangeListener(checkedChangeListener);
         autonomy.setOnCheckedChangeListener(checkedChangeListener);
-        authentic.setOnCheckedChangeListener(checkedChangeListener);
+        authenticity.setOnCheckedChangeListener(checkedChangeListener);
         awe.setOnCheckedChangeListener(checkedChangeListener);
         adjustment.setOnCheckedChangeListener(checkedChangeListener);
         balance.setOnCheckedChangeListener(checkedChangeListener);
@@ -127,8 +133,14 @@ public class ValuesActivity extends AppCompatActivity {
         community.setOnCheckedChangeListener(checkedChangeListener);
         collaboration.setOnCheckedChangeListener(checkedChangeListener);
         commitment.setOnCheckedChangeListener(checkedChangeListener);
-        connectivity.setOnCheckedChangeListener(checkedChangeListener);
+        connection.setOnCheckedChangeListener(checkedChangeListener);
         consistency.setOnCheckedChangeListener(checkedChangeListener);
+        choice.setOnCheckedChangeListener(checkedChangeListener);
+        competition.setOnCheckedChangeListener(checkedChangeListener);
+        composure.setOnCheckedChangeListener(checkedChangeListener);
+        contribution.setOnCheckedChangeListener(checkedChangeListener);
+        courage.setOnCheckedChangeListener(checkedChangeListener);
+        creativity.setOnCheckedChangeListener(checkedChangeListener);
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -201,8 +213,8 @@ public class ValuesActivity extends AppCompatActivity {
                             case "Autonomy":
                                 autonomy.setChecked(true);
                                 break;
-                            case "Authentic":
-                                authentic.setChecked(true);
+                            case "Authenticity":
+                                authenticity.setChecked(true);
                                 break;
                             case "Awe":
                                 awe.setChecked(true);
@@ -234,11 +246,29 @@ public class ValuesActivity extends AppCompatActivity {
                             case "Commitment":
                                 commitment.setChecked(true);
                                 break;
-                            case "Connectivity":
-                                connectivity.setChecked(true);
+                            case "Connection":
+                                connection.setChecked(true);
                                 break;
                             case "Consistency":
                                 consistency.setChecked(true);
+                                break;
+                            case "Choice":
+                                choice.setChecked(true);
+                                break;
+                            case "Competition":
+                                competition.setChecked(true);
+                                break;
+                            case "Composure":
+                                composure.setChecked(true);
+                                break;
+                            case "Contribution":
+                                contribution.setChecked(true);
+                                break;
+                            case "Courage":
+                                courage.setChecked(true);
+                                break;
+                            case "Creativity":
+                                creativity.setChecked(true);
                                 break;
                         }
                     }

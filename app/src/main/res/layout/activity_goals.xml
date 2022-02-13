@@ -12,6 +12,18 @@
         android:layout_gravity="top"
         android:background="@color/colorPrimary">
 
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            app:tint="@color/colorWhite"
+            android:src="@drawable/ic_arrow_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -27,20 +39,751 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floating_action_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="28dp"
-        app:backgroundTint="@color/colorAccent"
-        app:tint="@color/colorWhite"
-        app:rippleColor="@color/colorWhite"
-        android:src="@drawable/ic_back"
-        app:fabCustomSize="65dp">
-    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/definition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                app:cardBackgroundColor="@color/colorCard"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="36dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="GOAL SETTING"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="Definition"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/def_que"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:justificationMode="inter_word"
+                        android:text="Question"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/def_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:justificationMode="inter_word"
+                        android:text="Description"
+                        android:textColor="@color/colorText"
+                        android:textSize="14sp"></TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:minHeight="50dp"
+                        app:cardBackgroundColor="@color/colorBackground"
+                        app:cardCornerRadius="20dp">
+
+                        <EditText
+                            android:id="@+id/definition_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:hint="Start Typing..."
+                            android:padding="16dp"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp"></EditText>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/def_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="30dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="16dp"
+                        app:cardBackgroundColor="@color/colorBackground">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Save"
+                            android:textSize="14sp"
+                            android:paddingRight="16dp"
+                            android:paddingLeft="16dp"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp"
+                            android:textColor="@color/colorText"></TextView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Answers"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorText"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/def_ans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Answers..."
+                        android:textSize="18sp"
+                        android:textColor="@color/colorText"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="8dp"></TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                app:cardBackgroundColor="@color/colorCard"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="36dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="GOAL SETTING"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="Progress"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/prog_que"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:justificationMode="inter_word"
+                        android:text="Question"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/prog_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:justificationMode="inter_word"
+                        android:text="Description"
+                        android:textColor="@color/colorText"
+                        android:textSize="14sp"></TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:minHeight="50dp"
+                        app:cardBackgroundColor="@color/colorBackground"
+                        app:cardCornerRadius="20dp">
+
+                        <EditText
+                            android:id="@+id/progress_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:hint="Start Typing..."
+                            android:padding="16dp"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp"></EditText>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/prog_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="30dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="16dp"
+                        app:cardBackgroundColor="@color/colorBackground">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Save"
+                            android:textSize="14sp"
+                            android:paddingRight="16dp"
+                            android:paddingLeft="16dp"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp"
+                            android:textColor="@color/colorText"></TextView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Answers"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorText"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/prog_ans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Answers..."
+                        android:textSize="18sp"
+                        android:textColor="@color/colorText"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="8dp"></TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/reasons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                app:cardBackgroundColor="@color/colorCard"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="36dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="GOAL SETTING"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="Reasons"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/reasons_que"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:justificationMode="inter_word"
+                        android:text="Question"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/reasons_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:justificationMode="inter_word"
+                        android:text="Description"
+                        android:textColor="@color/colorText"
+                        android:textSize="14sp"></TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:minHeight="50dp"
+                        app:cardBackgroundColor="@color/colorBackground"
+                        app:cardCornerRadius="20dp">
+
+                        <EditText
+                            android:id="@+id/reasons_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:hint="Start Typing..."
+                            android:padding="16dp"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp"></EditText>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/res_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="30dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="16dp"
+                        app:cardBackgroundColor="@color/colorBackground">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Save"
+                            android:textSize="14sp"
+                            android:paddingRight="16dp"
+                            android:paddingLeft="16dp"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp"
+                            android:textColor="@color/colorText"></TextView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Answers"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorText"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/res_ans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Answers..."
+                        android:textSize="18sp"
+                        android:textColor="@color/colorText"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="8dp"></TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/barriers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                app:cardBackgroundColor="@color/colorCard"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="36dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="GOAL SETTING"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="Barriers"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/barrier_que"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:justificationMode="inter_word"
+                        android:text="Question"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/barrier_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:justificationMode="inter_word"
+                        android:text="Description"
+                        android:textColor="@color/colorText"
+                        android:textSize="14sp"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:justificationMode="inter_word"
+                            android:text="If..."
+                            android:textColor="@color/colorText"
+                            android:textSize="18sp"></TextView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:clickable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:minHeight="50dp"
+                            app:cardBackgroundColor="@color/colorBackground"
+                            app:cardCornerRadius="20dp">
+
+                            <EditText
+                                android:id="@+id/barrier_et1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:hint="Start Typing..."
+                                android:padding="16dp"
+                                android:textColor="@color/colorText"
+                                android:textSize="16sp"></EditText>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:justificationMode="inter_word"
+                            android:text="I Will..."
+                            android:textColor="@color/colorText"
+                            android:textSize="18sp"></TextView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:clickable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:minHeight="50dp"
+                            app:cardBackgroundColor="@color/colorBackground"
+                            app:cardCornerRadius="20dp">
+
+                            <EditText
+                                android:id="@+id/barrier_et2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:hint="Start Typing..."
+                                android:padding="16dp"
+                                android:textColor="@color/colorText"
+                                android:textSize="16sp"></EditText>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/bar_save"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="30dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="16dp"
+                            app:cardBackgroundColor="@color/colorBackground">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Save"
+                                android:textSize="14sp"
+                                android:paddingRight="16dp"
+                                android:paddingLeft="16dp"
+                                android:paddingBottom="8dp"
+                                android:paddingTop="8dp"
+                                android:textColor="@color/colorText"></TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your Answers"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorText"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="8dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/bar_ans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Answers..."
+                            android:textSize="18sp"
+                            android:textColor="@color/colorText"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="36dp"
+                            android:layout_marginTop="8dp"></TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                app:cardBackgroundColor="@color/colorCard"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="36dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="GOAL SETTING"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="Actions"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/actions_que"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:justificationMode="inter_word"
+                        android:text="Question"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/actions_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:justificationMode="inter_word"
+                        android:text="Description"
+                        android:textColor="@color/colorText"
+                        android:textSize="14sp"></TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:minHeight="50dp"
+                        app:cardBackgroundColor="@color/colorBackground"
+                        app:cardCornerRadius="20dp">
+
+                        <EditText
+                            android:id="@+id/actions_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:hint="Start Typing..."
+                            android:padding="16dp"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp"></EditText>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/act_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="30dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="16dp"
+                        app:cardBackgroundColor="@color/colorBackground">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Save"
+                            android:textSize="14sp"
+                            android:paddingRight="16dp"
+                            android:paddingLeft="16dp"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp"
+                            android:textColor="@color/colorText"></TextView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Answers"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorText"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/act_ans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Answers..."
+                        android:textSize="18sp"
+                        android:textColor="@color/colorText"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="8dp"></TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="120dp"></View>
+
+        </LinearLayout>
+
+    </ScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
